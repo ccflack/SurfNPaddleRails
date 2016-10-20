@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SurfNPaddleRails</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="page-heading">
+        <div class="jumbotron text-center">
+            <nav class="navbar navbar-transparent">
+                <div class="container-fluid">
+                    <div class="navbar-header"><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-header" aria-hidden="true"></span>HODOR &amp; HODOR HDR. BLOG</a></div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">HODOR</a></li>
+                            <li class="form-group navbar-form has-feedback has-feedback-right">
+                                <input type="text" class="form-control text-right transparent-input" placeholder="Hodor"><span class="glyphicon glyphicon-search"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h1>HODOR &amp; HODOR HDR.</h1>
+            <h4>Hodor Hodor Hodor-hodor. Hodor, Winter 2016.</h4>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="container col-xs-8">
+                  <%= yield %>
+                    <div class="container-fluid buttons">
+                      <button type="button" class="btn-xs" href="#" name="comments"><span class="glyphicon glyphicon-comment"></span><span> Hodor hodors</span></button>
+                      <button type="button" class="btn-xs" href="#" name="reading-list"><span class="glyphicon glyphicon-cloud-upload"></span><span> Hodor hodor</span></button>
+                      <button type="button" class="btn-xs" href="#" name="share"><span class="glyphicon glyphicon-share"></span><span> Hodor this hodor</span></button>
+                    </div>
+                </div>
+                <div class="col-xs-4 container sidebar">
+                    <div class="profile">
+                        <div class="col-xs-6 col-xs-offset-3 container-fluid hovereffect">
+                            < <%= image_link 'prof', class:"img-responsive", alt: "profile" %>>
+                        </div>
+                        <div class="container-fluid">
+                          <h3>Hodor</h3>
+                          <div class="container-fluid links"><a href="#">Twitter</a> <a href="#">Facebook</a> <a href="#">Hodorgram</a></div>
+                        </div>
+                    </div>
+                    <div class="adspace hovereffect container-fluid"><img class="img-responsive" src="/img/ad.jpg" alt="adspace">
+                        <div class="overlay adlink">
+                            <a class="" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="ad-info"><a href="#">About this hodor.</a></div>
+                    <h3>Hodor hodor hodor.</h3>
+                    <div>
+                        <h5>HODOR hodor, hodor hodor; hodor hodor hodor! Hodor, hodor - hodor?! Hodor hodor, hodor. Hodor HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor hodor HODOR hodor, hodor hodor - hodor hodor!</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <section class="container-fluid" id="box-strip">
+            <section class="text-center">
+                <h1>Hodor Hodor, HODOR</h1>
+            </section>
+            <section>
+                <div class="col-xs-3 hovereffect" id="box1">
+                    <a class="info" href="#"><img class="img-responsive" src="/img/bw.jpg" alt="bw">
+                        <div class="overlay">
+                            <h2>Hodor hodor, hodor-hodor.</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-3 hovereffect" id="box2">
+                    <a class="info" href="#"><img class="img-responsive" src="/img/red.jpg" alt="red">
+                        <div class="overlay">
+                            <h2>Hodor hodor...</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-3 hovereffect" id="box3">
+                    <a class="info" href="#"><img class="img-responsive" src="/img/quote.jpg" alt="quote">
+                        <div class="overlay">
+                            <h2>"Hodor, hodor hodor." --Hodor</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-3 hovereffect" id="box4">
+                    <a class="info" href="#"><img class="img-responsive" src="/img/game.jpg" alt="game">
+                        <div class="overlay">
+                            <h2>Hodor.</h2>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="navbar">
+        <div class="container-fluid navbar-footer">
+            <div class="nav navbar-form navbar-left">
+                <h5>Hodor hodor hodor, 2016. Hodor-hodor, Hodor.</h5>
+            </div>
+            <nav>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Hodor 1</a></li>
+                    <li><a href="#">Hodor 2</a></li>
+                    <li><a href="#">Hodor 3</a></li>
+                    <li><a href="#">Hodor 5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- Scripts go here. -->
+</body>
+
+</html>
+
+  </body>
+</html>

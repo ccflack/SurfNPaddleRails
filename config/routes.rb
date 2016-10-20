@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root 'posts#index'
+  root 'posts#newest'
+  get '/post/:id' => 'posts#show', as: :post
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

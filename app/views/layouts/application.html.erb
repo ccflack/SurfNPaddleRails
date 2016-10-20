@@ -35,12 +35,7 @@
         <div class="container-fluid">
             <div class="col-xs-10 col-xs-offset-1">
                 <div class="container col-xs-8">
-                  <%= yield %>
-                    <div class="container-fluid buttons">
-                      <button type="button" class="btn-xs" href="#" name="comments"><span class="glyphicon glyphicon-comment"></span><span> Hodor hodors</span></button>
-                      <button type="button" class="btn-xs" href="#" name="reading-list"><span class="glyphicon glyphicon-cloud-upload"></span><span> Hodor hodor</span></button>
-                      <button type="button" class="btn-xs" href="#" name="share"><span class="glyphicon glyphicon-share"></span><span> Hodor this hodor</span></button>
-                    </div>
+                  <%= yield :post %>
                 </div>
                 <div class="col-xs-4 container sidebar">
                     <div class="profile">
@@ -71,34 +66,7 @@
                 <h1>Hodor Hodor, HODOR</h1>
             </section>
             <section>
-                <div class="col-xs-3 hovereffect" id="box1">
-                    <a class="info" href="#"><%= image_tag 'bw', class:'img-responsive', alt: "bw" %>
-                        <div class="overlay">
-                            <h2>Hodor hodor, hodor-hodor.</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-3 hovereffect" id="box2">
-                    <a class="info" href="#"><%= image_tag 'red', class: 'img-responsive', alt:"red" %>
-                        <div class="overlay">
-                            <h2>Hodor hodor...</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-3 hovereffect" id="box3">
-                    <a class="info" href="#"><%= image_tag 'quote', class: 'img-responsive', alt: "quote" %>
-                        <div class="overlay">
-                            <h2>"Hodor, hodor hodor." --Hodor</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-3 hovereffect" id="box4">
-                    <a class="info" href="#"><%= image_tag 'game', class: 'img-responsive', alt: 'game'%>
-                        <div class="overlay">
-                            <h2>Hodor.</h2>
-                        </div>
-                    </a>
-                </div>
+              <%= yield :bar %>
             </section>
         </section>
     </main>

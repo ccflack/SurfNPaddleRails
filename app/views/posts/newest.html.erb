@@ -1,0 +1,11 @@
+<% content_for :post do %>
+
+  <%= render partial: 'post', locals: {post: @newest} %>
+
+<% end %>
+
+<% content_for :bar do %>
+
+  <%= render partial: 'bar', locals: {current: @newest, other: @ordered.reject { |post| post == @newest }} %>
+
+<% end %>

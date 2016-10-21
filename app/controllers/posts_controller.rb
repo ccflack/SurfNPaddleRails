@@ -7,13 +7,15 @@ class PostsController < ApplicationController
 
   def newest
     @ordered = Post.all.sort_by { |post| post.created_at }.reverse
-    @post = Post.find(params[:id])
     @newest = (Post.all.sort_by { |post| post.created_at }.reverse).first
+    @post = Post.find(params[:id])
+    @title = @post.title
   end
 
   def show
     @ordered = Post.all.sort_by { |post| post.created_at }.reverse
     @post = Post.find(params[:id])
+    @title = @post.title
   end
 
 end

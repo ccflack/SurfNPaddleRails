@@ -9,3 +9,9 @@
   <%= render partial: 'bar', locals: {current: @post, other: @ordered.reject { |post| post == @post }} %>
 
 <% end %>
+
+<% content_for :author do %>
+
+  <%= render partial: 'author', locals: {current: @post} %>
+
+<% end %>

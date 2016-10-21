@@ -22,7 +22,10 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">HODOR</a></li>
                             <li class="form-group navbar-form has-feedback has-feedback-right">
-                                <input type="text" class="form-control text-right transparent-input" placeholder="Hodor"><span class="glyphicon glyphicon-search"></span></li>
+                              <%= form_tag(search_path, :method => "get", id: "search-form") do %>
+                              <%= text_field_tag :search, params[:search], placeholder: "Hodor" %>
+                              <%= submit_tag 'Hodor' %>
+                              <% end %>
                         </ul>
                     </div>
                 </div>

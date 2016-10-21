@@ -1,0 +1,12 @@
+<% @posts.each do %>
+<h1 class="text-uppercase"><%= post.title %></h1>
+<h4 class="text-right"><%= post.created_at.strftime("%B %e %Y") %></h4>
+<div>
+  <%= simple_format(post.body).truncate(60) %>
+</div>
+<div class="container-fluid buttons">
+  <button type="button" class="btn-xs" href="#" name="comments"><span class="glyphicon glyphicon-comment"></span><span> Hodor hodors</span></button>
+  <button type="button" class="btn-xs" href="#" name="reading-list"><span class="glyphicon glyphicon-cloud-upload"></span><span> Hodor hodor</span></button>
+  <button type="button" class="btn-xs" href="#" name="share"><span class="glyphicon glyphicon-share"></span><span> Hodor this hodor</span></button>
+</div>
+<% end %>

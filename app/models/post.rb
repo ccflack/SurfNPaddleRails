@@ -145,6 +145,11 @@ class Post
     @posts
   end
 
+  def self.search(search)
+    where("author LIKE ?", "%#{search}%")
+    where("title LIKE ?", "%#{search}%")
+  end
+
   def self.find(id)
     all.select{|post| post.id == id.to_i}.first
   end

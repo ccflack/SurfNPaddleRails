@@ -1,5 +1,5 @@
 <% if @posts.present? %>
   <%= render partial: 'results', locals: {posts: @posts}%>
 <% else %>
-  <p>There are no posts containing the term(s) <%= params[:search] %>.</p>
+  <p>There are no posts matching your search: <%= params[:search] %>.</p>
 <% end %>
